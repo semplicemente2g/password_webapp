@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Registrazione</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Registrati</h2>
+      <form method="post">
+        <label for="username">Username</label>
+        <input name="username" type="username" required><br>
+
+        <label for="password">Password</label>
+        <input name="password" type="password" required><br>
+
+        <input type="submit" value="Invia">
+      </form>
+
+      <p><a href="/">Home</a></p>
+
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% for category, message in messages %}
+          <div class="message">{{ message }}</div>
+        {% endfor %}
+      {% endwith %}
+    </div>
+  </body>
+</html>

@@ -11,7 +11,7 @@ Lo scopo di questo progetto è dimostrare alcuni principi fondamentali della sic
 * **Frontend:** HTML e CSS base per l'interfaccia utente
 
 ## Linguaggio di Programmazione
-Il progetto è stato sviluppato interamente in **Python**. La scelta di questo linguaggio è dettata dalla sua versatilità, semplicità sintattica e dall'ampio ecosistema di librerie disponibili. In particolare, Python risulta ideale per questo tipo di progetto grazie alla facilità con cui permette di integrare framework web leggeri (come Flask) e librerie crittografiche robuste (come bcrypt). Questo ha permesso di gestire in modo efficiente sia la logica di backend dell'applicazione sia le operazioni di sicurezza, mantenendo il codice pulito e facilmente manutenibile.
+Il progetto è stato sviluppato interamente in **Python**. La scelta di questo linguaggio è dettata dalla sua versatilità, semplicità sintattica e dall'ampio ecosistema di librerie disponibili. Questo ha permesso di gestire in modo efficiente sia la logica di backend dell'applicazione sia le operazioni di sicurezza, mantenendo il codice pulito e facilmente manutenibile.
 
 ## Funzionalità Implementate
 1. **Registrazione Sicura:** L'utente inserisce username e password. La password viene "saltata" e "hashata" tramite l'algoritmo bcrypt, che offre elevata resistenza contro attacchi brute-force e rainbow-table grazie alla sua lentezza computazionale. Le credenziali vengono poi salvate nel file `users.json`.

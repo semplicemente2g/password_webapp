@@ -1,7 +1,5 @@
 # Sistema di Gestione Sicura delle Password
 
-**Autore:** Luigi Lauriola (Matricola: 0001189616)
-
 ## Obiettivo del Progetto
 Lo scopo di questo progetto è dimostrare alcuni principi fondamentali della sicurezza informatica attraverso una semplice applicazione web. L'applicazione gestisce in modo sicuro la registrazione e il login degli utenti, memorizza le password in formato sicuro tramite hashing, permette la verifica dell'integrità e fornisce una base per esplorare vulnerabilità e relative contromisure nell'ambito dell'autenticazione.
 
@@ -11,6 +9,9 @@ Lo scopo di questo progetto è dimostrare alcuni principi fondamentali della sic
 * **Librerie di Sicurezza:** `bcrypt` (per l'hashing e il salting delle password)
 * **Salvataggio Dati:** File `.json` locale (`users.json`)
 * **Frontend:** HTML e CSS base per l'interfaccia utente
+
+## Linguaggio di Programmazione
+Il progetto è stato sviluppato interamente in **Python**. La scelta di questo linguaggio è dettata dalla sua versatilità, semplicità sintattica e dall'ampio ecosistema di librerie disponibili. In particolare, Python risulta ideale per questo tipo di progetto grazie alla facilità con cui permette di integrare framework web leggeri (come Flask) e librerie crittografiche robuste (come bcrypt). Questo ha permesso di gestire in modo efficiente sia la logica di backend dell'applicazione sia le operazioni di sicurezza, mantenendo il codice pulito e facilmente manutenibile.
 
 ## Funzionalità Implementate
 1. **Registrazione Sicura:** L'utente inserisce username e password. La password viene "saltata" e "hashata" tramite l'algoritmo bcrypt, che offre elevata resistenza contro attacchi brute-force e rainbow-table grazie alla sua lentezza computazionale. Le credenziali vengono poi salvate nel file `users.json`.
@@ -49,13 +50,3 @@ Per testare la robustezza delle password salvate nel file `users.json`, puoi ese
 python attacco_dizionario.py
 ```
 Il terminale mostrerà quali account (se presenti) sono stati compromessi perché utilizzano password deboli presenti nel dizionario.
-
-
-
-
-
-
-
-
-
-
